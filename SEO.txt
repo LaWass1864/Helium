@@ -1,0 +1,11 @@
+1 - Créer du bon <div class="container-fluid">
+    Au moins 400 mots par page minimum
+    Garder un contenu à jour
+    
+
+2 - HTLM "seo friendly"
+
+3 - Site rapide et (performant)
+
+
+

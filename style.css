@@ -1,0 +1,129 @@
+/* Typographie INTER */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+/* Couleurs */
+:root {
+  --background-color: #211f1f;
+  --violet: #6a29c5;
+  --font-color: #fff8f8;
+  --background-section: #000;
+}
+
+/* réglages généraux */
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 5;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background-color);
+  color: var(--font-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto;
+}
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.header-left-container h3 {
+  color: var(--violet);
+  font-size: 1.8rem;
+}
+
+.header-right {
+  width: 50%;
+}
+
+#modem {
+  width: 100%;
+}
+
+/* Section du bas */
+
+.infos {
+  display: flex;
+  background: var(--background-section);
+  border-radius: 10px;
+}
+
+.infos-left {
+  width: 33%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+button {
+  background: var(--violet);
+  color: var(--font-color);
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.infos-right {
+  width: 67%;
+}
+
+.investors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.img-container  {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.img-container img{
+    height: 60px;
+}
