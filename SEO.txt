@@ -17,9 +17,9 @@
     Il faut faire apparaitre le plus vite possible une couleur de fond.
     Il faut privilégier les images depuis le css et non la balise IMG en HTML.
     
-
 Tester son SEO : plugin "LightHouse"
 
+Doc SEO Google : https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=fr 
 
 
 
