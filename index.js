@@ -4,11 +4,12 @@ const greenmouse = document.querySelector('.greenmouse');
 const graymouse = document.querySelector('.graymouse');
 const blackmouse = document.querySelector('.blackmouse');
 const link = document.querySelector("a");
+const logo = document.querySelector("h2");
 
 
 link.addEventListener('mouseover', () => {  
   greenmouse.style.cursor = "pointer";
-
+  logo.style.cursor = "pointer";  
 })
 
 window.addEventListener("mousemove", (e) => {
@@ -20,5 +21,9 @@ window.addEventListener("mousemove", (e) => {
     greenmouse.style.top = e.pageY + "px";
   });
 
+link.addEventListener('click', () => {
+  link.style.background.toggle = "pink";
+})
 
-//   window.open("http://google.com", "cours js", "height=600, width=800");
+
+// ForEach
