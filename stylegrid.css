@@ -26,6 +26,11 @@ nav ul {
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
+
+a{
+  text-decoration: none;
+  color: rgb(250, 250, 250); 
+}
 .header {
   display: grid;
   grid-template-columns: 50% 50%;
