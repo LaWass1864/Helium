@@ -5,6 +5,12 @@ const graymouse = document.querySelector('.graymouse');
 const blackmouse = document.querySelector('.blackmouse');
 const link = document.querySelector("a");
 
+
+link.addEventListener('mouseover', () => {  
+  greenmouse.style.cursor = "pointer";
+
+})
+
 window.addEventListener("mousemove", (e) => {
     blackmouse.style.left = e.pageX + "px";
     blackmouse.style.top = e.pageY + "px";   
@@ -16,6 +22,3 @@ window.addEventListener("mousemove", (e) => {
 
 
 //   window.open("http://google.com", "cours js", "height=600, width=800");
-
-document.addEventListener('mouseover', () => 
-)
