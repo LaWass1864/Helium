@@ -105,15 +105,14 @@ button {
 .blackmouse {
   height: 110px;
   width: 110px;
-  background: rgb(31, 31, 22);
+  background: rgba(32, 32, 30, 0.401);
   mix-blend-mode: difference;
   position: absolute;
   border-radius: 1500px;
   left: 50%;
   top: 132px;
   transform: translate(-50%, -50%);
-  transition: 0.3s ease;
-  z-index: 1;
+  transition: 0.2s ease-out;
 }
 
 .graymouse {
@@ -127,8 +126,7 @@ button {
   left: 50%;
   top: 132px;
   transform: translate(-50%, -50%);
-  transition: 0.3s ease;
-  z-index: 1;
+  transition: 0.2s ease-out;
 }
 .greenmouse {
   height: 10px;
@@ -140,8 +138,21 @@ button {
   left: 50%;
   top: 132px;
   transform: translate(-50%, -50%);
-  transition: 0.3s ease;
-  z-index: 1;
+  transition: 0.2s ease-out;
+}
+
+a,
+a:visited {
+  z-index: 1000;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  position: relative;
+}
+
+a:hover {
+  font-size: 1.3rem;
+  color: blue;
 }
 
 /* ************ MEDIA QUERIES ************** */

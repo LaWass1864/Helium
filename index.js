@@ -6,12 +6,6 @@ const blackmouse = document.querySelector('.blackmouse');
 const link = document.querySelector("a");
 const logo = document.querySelector("h2");
 
-
-link.addEventListener('mouseover', () => {  
-  greenmouse.style.cursor = "pointer";
-  logo.style.cursor = "pointer";  
-})
-
 window.addEventListener("mousemove", (e) => {
     blackmouse.style.left = e.pageX + "px";
     blackmouse.style.top = e.pageY + "px";   
@@ -21,9 +15,14 @@ window.addEventListener("mousemove", (e) => {
     greenmouse.style.top = e.pageY + "px";
   });
 
-link.addEventListener('click', () => {
-  link.style.background.toggle = "pink";
-})
+// On peut l'optimiser ForEach peu importe le nb d'elements qu'il y a
 
+const mouses = document.querySelectorAll(".mouse");
 
-// ForEach
+window.addEventListener("mousemove", (e) => {
+  mouses.forEach((mouse) => {
+    mouse.style.top = e.y + "px";
+    mouse.style.left = e.x + "px";
+
+  });
+});
